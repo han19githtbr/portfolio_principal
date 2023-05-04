@@ -234,15 +234,11 @@ header {
 .menu-item:hover {
     color: #000;
     animation: zoom 1s;
-   
 }
-
 
 .banner button:hover {
     color: #000;
-    
 }
-
 
 .social-media {
     position: absolute;
@@ -272,11 +268,6 @@ header {
     animation: zoom 1s;
 }
   
-
-/*section.apresentacao{
-    width: 100%;
-    border-bottom: 2px solid gray;
-}*/
 
 .meus-dados{
     max-width: 770px;
@@ -315,6 +306,7 @@ header {
     top: 0;    
     animation: zoom 1s infinite;
 }
+
 .icone i{    
     position: absolute;
     top: 50%;
@@ -323,16 +315,20 @@ header {
     text-decoration: none;
     color: #000; 
 }
+
 .icone i:hover{
     border-bottom: 3px solid gray;
 }
+
 .icone i a{     
     text-decoration: none;
     color: #000; 
 }
+
 .description{
     width: 50%;
 }
+
 .description h1{     
     font-size: 25px;
     color: #707070;
@@ -340,6 +336,7 @@ header {
     font-weight: bold;
     margin-top: 15px;   
 }
+
 .description h3{     
     font-size: 20px;
     color: #707070;
@@ -348,6 +345,7 @@ header {
     font-weight: lighter; 
     padding: 10px 0;  
 }
+
 .description p{     
     font-size: 15px;
     color: #707070;
