@@ -124,10 +124,6 @@ header {
 }
 
 
-/*html,body{
-    height: 100%;
-}*/
-
 @keyframes zoom {
     0%{
         transform: scale(1.1);
@@ -233,7 +229,7 @@ header {
 
 .menu-item:hover {
     color: #000;
-    animation: zoom 1s;
+    animation: zoom 2s;
 }
 
 .banner button:hover {
@@ -265,7 +261,7 @@ header {
   
 .social-media i:hover {
     color: gray;
-    animation: zoom 1s;
+    animation: zoom 2s;
 }
   
 
@@ -300,11 +296,11 @@ header {
     width: 40px;
     height: 40px;    
     border-radius: 50%;
-    background-color: #585858;
+    background-color: #181818;
     margin: 5px;
     position: relative;
     top: 0;    
-    animation: zoom 1s infinite;
+    animation: zoom 2s infinite;
 }
 
 .icone i{    
@@ -313,7 +309,7 @@ header {
     left: 50%; 
     transform: translate(-50%, -50%);  
     text-decoration: none;
-    color: #000; 
+    color: gray; 
 }
 
 .icone i:hover{
@@ -441,6 +437,10 @@ header {
     row-gap: 0.5rem;
 }
 
+.conhecimento-header h3:hover {
+    cursor: pointer;
+}
+
 .conhecimento-text p {
     position: relative;
     padding-top: 10px;
@@ -449,6 +449,8 @@ header {
     color: black;
     font-size: 11px;
     text-align: justify;
+    padding-top: 0.1px;
+    font-weight: bold;
 }
 
 .conhecimento:hover p {
@@ -490,16 +492,18 @@ header {
 .conhecimento:nth-child(7) {
     grid-column: 10 / 13;
     grid-row: 5 / -1;
-    
 }
 
 
 .conhecimento:nth-child(8) {
     grid-column: 5 / 10;
     grid-row: 5 / -1;
-    
 }
 
+.conhecimento:nth-child(9) {
+    grid-column: 8 / 8;
+    grid-row: 6 / -1;
+}
 
 .sessao-conhecimentos {
     background-color: #f5f5f5;
@@ -735,11 +739,12 @@ button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #585858;
+    background-color: #0b0b0b;
+    
     margin: 5px;
     position: relative;
     top: 0;
-    animation: zoom 1s infinite;
+    animation: zoom 2s infinite;
 }
 .redes i{ /* Icones das redes sociais */
     position: absolute;
@@ -747,7 +752,7 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
-    color: #000;
+    color: gray;
     
 }
 .redes i:hover{ 
@@ -804,6 +809,16 @@ label{
     animation: zoom 1s infinite;
 }
 
+@keyframes mymove {
+    from {
+        top: -50px;
+    }
+    to {
+        bottom: 30px;
+    }
+}
+
+
 #link-topo{
     position: fixed;
     right: 3rem;
@@ -820,6 +835,7 @@ label{
     border-radius: .3rem;
     box-shadow:  0 0.1rem 0.6rem #00000009;
     text-decoration: none;
+    animation: mymove 0.5s infinite;
 }
   
 
