@@ -835,7 +835,7 @@ label{
     border-radius: .3rem;
     box-shadow:  0 0.1rem 0.6rem #00000009;
     text-decoration: none;
-    //animation: mymove 0.5s infinite;
+    animation: mymove 0.5s infinite;
 }
   
 
