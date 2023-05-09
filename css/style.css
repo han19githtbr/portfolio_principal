@@ -754,36 +754,6 @@ button{
     }
 }
 
-.Git{
-    width: 100%;
-    background-color: black;
-    padding: 20px 0;
-    border-bottom: 2px solid gray; /*linha para separar divisoes*/
-}
-.containerGit{
-    max-width: 1000px;
-    margin: 0 auto; 
-    padding: 0 1%; /*espaçamento horizontal entre elementos da página*/
-}
-.projetosGitHub{
-    text-align: center;
-    color: blue;
-    margin: 20px auto;
-}
-.paragrafoGIT{
-    color: white;
-    text-align: center;
-}
-.containerGit ul li {
-    display: flex;
-    flex-direction: column;
-    margin: 30px auto;
-    color: white;
-    text-align: center;
-}
-.containerGit ul li span {
-    margin: 10px 0;
-}
 .contato{
     width: 100%;
     background-color: black;
