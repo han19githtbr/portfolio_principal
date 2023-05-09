@@ -21,6 +21,7 @@
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -430,8 +431,8 @@ header {
     color: #999999;
     opacity: 1;
 }
-.conhecimentos {
-    display: grid;
+
+/*.conhecimentos {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6.5rem);
     row-gap: 0.5rem;
@@ -519,14 +520,11 @@ header {
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #4b4b4b;
-    //border-bottom: solid 3px #008080;
     margin-bottom: 1.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-
-/*  animacao para mover os itens  */
 @keyframes moveConhecimento{
     0%{
         transform: translateX(50rem) rotateX(-30deg); 
@@ -578,16 +576,24 @@ header {
     object-fit: cover;
     width: 100%;
     border-radius: 100%;
-    
-    
 }
 
 .paragrafo-conhecimento {
     font-size: 13px;
-}
+}*/
 
 .titulo-projeto {
     text-align: center;
+    color: #252525;
+}
+
+.titulo-conhecimento {
+    text-align: center;
+}
+
+.titulo-demo {
+    text-align: center;
+    margin-left: 100px;
 }
 
 .descricao-projetos {
@@ -596,43 +602,118 @@ header {
       
 }
 
+.descricao-conhecimento {
+    text-align: center;
+    padding-top: 30px;
+      
+}
+
 .projetos{
     width: 100%;
     padding: 80px;
+    background-color: #acacac;
 }
+
+.demos{
+    width: 100%;
+    padding: 80px;
+    background-color: #e6e6e6;
+}
+
+
+.projetos h2{
+    font-size: 30px;
+    color: #0e0e0e;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+
+.sessao-conhecimentos{
+    width: 100%;
+    padding: 80px;
+    background-color: #dedede;
+}
+
 .projetos h2{
     font-size: 30px;
     color: #707070;
     opacity: 1;
     margin-bottom: 15px;
 }
+
 .cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .card{
     width: 33.3%;
     display: flex;
     flex-direction: column;
-    
 }
+
 .info-card{
     padding: 5px 10px;
 }
+
+.cards-conhecimento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.card-conhecimento{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    //margin-left: 10px;
+}
+
+.info-card-conhecimento{
+    padding: 5px 10px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.info-card-conhecimento i{
+    padding-right: 5px;
+}
+
 .info-card img{
     width: 100%;
 }
+
 .info-card h3{
     font-size: 15px;
-    color: #999999;
+    color: #252525;
     opacity: 1;
 }
+
 .info-card p{
     font-size: 12px;
-    color: #999999;
+    color: #181818;
     opacity: 1;
 }
+
+.cards-demo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.card-demo{
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card-demo{
+    padding: 5px 10px;
+}
+
 .btn-repo{
     display: flex;
     flex-direction: row;
@@ -701,7 +782,7 @@ button{
     text-align: center;
 }
 .containerGit ul li span {
-    margin: 10px;
+    margin: 10px 0;
 }
 .contato{
     width: 100%;
@@ -877,6 +958,12 @@ label{
         bottom: 50px;
     }
     .card{
+        width: 100%;
+    }
+    .card-conhecimento{
+        width: 100%;
+    }
+    .card-demo {
         width: 100%;
     }
     .info-form{
