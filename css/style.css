@@ -817,6 +817,12 @@ label{
     color: white;
 }*/
 
+
+#id-demo-processamento {
+    pointer-events: none;
+    cursor: default;
+}
+
 @media screen and (max-width: 768px){
             
     .meus-dados{
